@@ -1,7 +1,7 @@
 # Colin Plumbs MD5 program
 
 This program was developed by Colin Plumb in 1993.
-The original code was written in a now forgotten dialect of C.
+The original code was written in an ancient dialect of C.
 
 It can be found here:
 https://opensource.apple.com/source/Security/Security-28/AppleCSP/MiscCSPAlgs/MD5.c
