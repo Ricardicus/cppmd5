@@ -1,6 +1,6 @@
 # Colin Plumbs MD5 program
 
-This program was developed by Colin Plumb, then aged 22, in 1993.
+This program was developed by Colin Plumb in 1993.
 The original code was written in a now forgotten dialect of C.
 
 It can be found here:
