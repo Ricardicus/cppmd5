@@ -283,3 +283,35 @@ int MD5Hasher::MD5FileContent(
   return 0;
 }
 
+#ifndef MD5SUM_NO_MAIN
+void usage(const char* argv0) {
+  printf("MD5 sum calculator based on Colin Plumbs program from 1993.\n");
+  printf("see: https://opensource.apple.com/source/Security/Security-28/AppleCSP/MiscCSPAlgs/MD5.c\n\n");
+  printf("usage: %s file\n", argv0);
+}
+
+int main(int argc, char *argv[]){
+  std::string file;
+  std::string md5;
+  MD5Hasher hasher;
+  int ret;
+
+  if ( argc < 2 ) {
+    usage (argv[0]);
+    return 1;
+  }
+
+  file.assign(argv[1]);
+
+  ret = hasher.MD5FileContent(file, md5);
+  if ( ret != 0 ) {
+    fprintf(stderr, "file '%s' not found\n", file.c_str());
+    return 1;
+  }
+
+  printf("%s\n", md5.c_str());
+  return 0;
+}
+
+
+#endif
