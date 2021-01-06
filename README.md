@@ -35,9 +35,4 @@ make
 
 Basically, only md5.cpp and md5.hpp are the sources you need.
 
-# Concluding remarks
-
-Have a good day.
-
-
 
